@@ -1,0 +1,3 @@
+<?php 
+define("AUTO_TOKEN", "764a290139c17aaed388b17ff123115391bf8451");
+?>
