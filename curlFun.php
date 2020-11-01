@@ -14,7 +14,7 @@ function sendCurl($url, $headers, $req, $body = ""){
     }
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 1);
     curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 2);
-    $out = curl_exec($curl); 
+    $out = json_decode(curl_exec($curl), true); 
     $code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
     curl_close($curl);
     return $out;
