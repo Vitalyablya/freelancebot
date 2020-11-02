@@ -21,4 +21,9 @@ function sendCurl(string $url, string $req, string $body = "") : array{
     $code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
     curl_close($curl);
     return $out;
-}?>
+}
+
+function getLastProject(){
+    return sendCurl("https://api.freelancehunt.com/v2/projects", "GET", "filter[only_my_skills]=1")['data'][0];
+}
+?>
