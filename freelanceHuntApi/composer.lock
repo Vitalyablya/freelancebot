@@ -1,0 +1,52 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "00879ad22dd47ec4aec0d451167da92b",
+    "packages": [
+        {
+            "name": "freelancevip/freelancehunt-api",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/freelancevip/freelancehunt-api-php.git",
+                "reference": "e0c953154e38e0878ffb8a0cfe7efaefb6a206cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/freelancevip/freelancehunt-api-php/zipball/e0c953154e38e0878ffb8a0cfe7efaefb6a206cd",
+                "reference": "e0c953154e38e0878ffb8a0cfe7efaefb6a206cd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Freelancevip\\FreelancehuntApi\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Anatoliy Demchenko",
+                    "email": "freelancevip@yandex.ru"
+                }
+            ],
+            "description": "Freelancehunt PHP API",
+            "time": "2017-09-07T23:44:18+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}
