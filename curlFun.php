@@ -10,8 +10,10 @@ function sendCurl($url, $headers, $req, $body = ""){
         curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'POST');
         curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($body));
     }else if($req === "GET"){
-        curl_setopt($curl, CURLOPT_URL, $url . "?" .$body);
+        $url = isset($body) ? $url . "?" . $body : $url;
+        curl_setopt($curl, CURLOPT_URL, $url);
     }
+    
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 1);
     curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 2);
     $out = json_decode(curl_exec($curl), true); 
