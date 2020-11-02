@@ -6,7 +6,7 @@ $telegram = new Api(BOT_TOKEN);
 function sendMessage($text){
     global $telegram;
     $response = $telegram->sendMessage([
-        'chat_id' => CHAT_ID, 
+        'chat_id' => USER_ID, 
         'text' => $text
     ]);
 }
